@@ -346,12 +346,12 @@ ol.renderer.canvas.TileLayer.prototype.prepareFrame =
   }
 
   var i, ii;
-  for (i = 0, ii = tilesToClear.length; i < ii; ++i) {
+  /*for (i = 0, ii = tilesToClear.length; i < ii; ++i) {
     tile = tilesToClear[i];
     x = tilePixelSize[0] * (tile.tileCoord[1] - canvasTileRange.minX);
     y = tilePixelSize[1] * (canvasTileRange.maxY - tile.tileCoord[2]);
     context.clearRect(x, y, tilePixelSize[0], tilePixelSize[1]);
-  }
+  }*/
 
   /** @type {Array.<number>} */
   var zs = goog.array.map(goog.object.getKeys(tilesToDrawByZ), Number);
