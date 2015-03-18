@@ -3363,7 +3363,8 @@ olx.layer.ImageOptions.prototype.maxResolution;
  *     extent: (ol.Extent|undefined),
  *     minResolution: (number|undefined),
  *     maxResolution: (number|undefined),
- *     useInterimTilesOnError: (boolean|undefined)}}
+ *     useInterimTilesOnError: (boolean|undefined),
+ *     useOldAsInterimTiles: (boolean|undefined)}}
  * @api
  */
 olx.layer.TileOptions;
@@ -3465,6 +3466,14 @@ olx.layer.TileOptions.prototype.maxResolution;
  * @api stable
  */
 olx.layer.TileOptions.prototype.useInterimTilesOnError;
+
+
+/**
+ * Use old tiles as interim tiles. Default is `false`.
+ * @type {boolean|undefined}
+ * @api
+ */
+olx.layer.TileOptions.prototype.useOldAsInterimTiles;
 
 
 /**
